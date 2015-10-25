@@ -1,9 +1,8 @@
 body{
-    background: url("../Image/382609.jpg") fixed ;
+    background-image: url("../Image/382609.jpg") ;
     background-size:cover;
     background-position:  center center;
-    ;
 }
-.SignUp{
-    margin-top: 10%;
+.login{
+
 }
