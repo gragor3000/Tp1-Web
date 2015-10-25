@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    include("BD.php");
+?>
+
 <html>
 
 <head>
@@ -7,11 +12,6 @@
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/sticky-footer.css">
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap-theme.css"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <!-- Bootstrap core CSS -->
 
@@ -48,13 +48,21 @@
     </div>
 </nav>
 
-
-
-
-<footer class="footer">
-    <div class="containerFoot">
-        <p class="text-muted"><a href="#">Haut de la page</a></p>
+<div class="SignUp">
+    <div class="container">
+        <div class="jumbotron2">
+            <h1>Compte</h1>
+            <div id="ListeAccount" class="Liste"></div>
+            <input type="text" placeholder="Email" class="form-control">
+            <input type="password" placeholder="Mot de Passe" class="form-control">
+            <br>
+        </div>
     </div>
+</div>
+
+
+<<footer class="footer">
+    <p class="text-muted"><a href="#">Haut de la page</a></p>
 </footer>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -63,3 +71,9 @@
 </body>
 
 </html>
+
+<?php
+ShowAccount();
+
+
+?>
