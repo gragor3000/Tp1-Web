@@ -6137,7 +6137,7 @@ a.badge:focus {
     -o-transition: all .3s ease-in-out;
 }
 .jumbotron2 {
-    margin-left: 25%;
+    margin-top: 10%;
     float: left;
     text-align: center;
     color: #FFF;
@@ -6153,7 +6153,7 @@ a.badge:focus {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
-    width : 60%;
+    width : 100%;
 
 }
 
