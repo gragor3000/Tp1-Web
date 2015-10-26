@@ -150,7 +150,7 @@ function DeleteAccount($Email)//delete le compte sélectionné
     $pdo = null;
 }
 
-function Sondeur()
+function Sondeur()//load la page d'un compte d'un sondeur
 {
     try {
         $doc = new DOMDocument();
@@ -161,6 +161,20 @@ function Sondeur()
     } catch (PDOException $ex) {
         echo "Connection failed: " . $ex->getMessage();
     }
+}
+
+function CreationSondage($nbQuestion)//créer le sondage
+{
+    $doc = new DOMDocument();
+    $doc->loadHTMLFile("../HTML/AdminMain.htm");
+    for($ii=0;$ii<$nbQuestion;$ii++){
+
+    }
+}
+
+function AjoutQuestion($nbQuestion)
+{
+
 }
 
 ?>

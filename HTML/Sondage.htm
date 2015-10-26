@@ -12,7 +12,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>Sondage</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -33,7 +32,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="../HTML/ClientMain.htm">Home</a></li>
                 <li class="active"><a href="../HTML/Sondage.htm">Création de sondage</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -46,6 +45,32 @@
                 </li>
             </ul>
         </div>
+    </div>
+</div>
+
+
+<div id="container" class="container">
+    <div class="jumbotron2">
+        <form method="post" action="../PHP/Sondage.php">
+            <h2>Quantité de Questions</h2>
+            <table class="Account">
+                <tr>
+                    <td>
+                        <label for="Qte" class="sr-only">Quantité</label>
+                        <input name="Qte" id="Qte" type="number" min="1" placeholder="Quantité" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <button style="margin-left: 45%;" type="submit" class="btn btn-lg btn-success" name="Creer_btn"
+                                value="Accede">Créer
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
     </div>
 </div>
 
