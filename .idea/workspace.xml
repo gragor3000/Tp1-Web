@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071cfd18-520c-45c7-9a0e-1b1cdc23de24" name="Default" comment="bitch please">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/bd.sqlite3" afterPath="$PROJECT_DIR$/PHP/bd.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/AdminMain.htm" afterPath="$PROJECT_DIR$/HTML/AdminMain.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/Sondage.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/BD.php" afterPath="$PROJECT_DIR$/PHP/BD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/TP1.css" afterPath="$PROJECT_DIR$/CSS/TP1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/ClientMain.htm" afterPath="$PROJECT_DIR$/HTML/ClientMain.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TP1.iws" />
@@ -33,18 +30,40 @@
       <file leaf-file-name="Accueil.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.153847">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminMain.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminMain.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27740493">
-              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="55" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientMain.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.461538">
+              <caret line="25" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sondage.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML/Sondage.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41051453">
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -53,7 +72,7 @@
       <file leaf-file-name="Account.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
@@ -63,16 +82,15 @@
       <file leaf-file-name="BD.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/BD.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.384615">
-              <caret line="133" column="40" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
+            <state vertical-scroll-proportion="-10.846154">
+              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
               <folding>
-                <marker date="1445822260159" expanded="true" signature="422:583" placeholder="CREATE TABLE..IF..." />
-                <marker date="1445822260159" expanded="true" signature="603:710" placeholder="INSERT INTO ..." />
-                <marker date="1445822260159" expanded="true" signature="1428:1520" placeholder="SELECT * FRO..Compte..." />
-                <marker date="1445822260159" expanded="true" signature="2430:2460" placeholder="SELECT Compt..Compte..." />
-                <marker date="1445822260159" expanded="true" signature="3664:3782" placeholder="Update Compt..." />
-                <marker date="1445822260159" expanded="true" signature="4419:4464" placeholder="DELETE FROM ..." />
-                <marker date="1445822260159" expanded="true" signature="4592:4677" placeholder="..." />
+                <marker date="1445879590559" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
+                <marker date="1445879590559" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
+                <marker date="1445879590559" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
+                <marker date="1445879590559" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
+                <marker date="1445879590559" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
+                <marker date="1445879590559" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -98,16 +116,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientMain.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TP1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/TP1.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,6 +132,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -147,8 +156,11 @@
         <option value="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/CSS/TP1.css" />
         <option value="$PROJECT_DIR$/PHP/Account.php" />
-        <option value="$PROJECT_DIR$/PHP/BD.php" />
         <option value="$PROJECT_DIR$/HTML/AdminMain.htm" />
+        <option value="$PROJECT_DIR$/PHP/BD.php" />
+        <option value="$PROJECT_DIR$/HTML/Sondage.html" />
+        <option value="$PROJECT_DIR$/HTML/ClientMain.htm" />
+        <option value="$PROJECT_DIR$/HTML/Sondage.htm" />
       </list>
     </option>
   </component>
@@ -192,6 +204,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,8 +300,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,6 +325,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="702" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -363,7 +376,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.115625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -439,7 +452,7 @@
     <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -447,7 +460,7 @@
     <entry file="file://$PROJECT_DIR$/PHP/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -455,15 +468,14 @@
     <entry file="file://$PROJECT_DIR$/PHP/BD.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="133" column="40" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
           <folding>
-            <marker date="1445822260159" expanded="true" signature="422:583" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445822260159" expanded="true" signature="603:710" placeholder="INSERT INTO ..." />
-            <marker date="1445822260159" expanded="true" signature="1428:1520" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445822260159" expanded="true" signature="2430:2460" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445822260159" expanded="true" signature="3664:3782" placeholder="Update Compt..." />
-            <marker date="1445822260159" expanded="true" signature="4419:4464" placeholder="DELETE FROM ..." />
-            <marker date="1445822260159" expanded="true" signature="4592:4677" placeholder="..." />
+            <marker date="1445879590559" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445879590559" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
+            <marker date="1445879590559" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
+            <marker date="1445879590559" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -488,7 +500,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/TP1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/BD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1445879590559" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445879590559" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
+            <marker date="1445879590559" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
+            <marker date="1445879590559" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6139" column="17" selection-start-line="6139" selection-start-column="17" selection-end-line="6139" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -553,25 +632,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/BD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.384615">
-          <caret line="133" column="40" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
-          <folding>
-            <marker date="1445822260159" expanded="true" signature="422:583" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445822260159" expanded="true" signature="603:710" placeholder="INSERT INTO ..." />
-            <marker date="1445822260159" expanded="true" signature="1428:1520" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445822260159" expanded="true" signature="2430:2460" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445822260159" expanded="true" signature="3664:3782" placeholder="Update Compt..." />
-            <marker date="1445822260159" expanded="true" signature="4419:4464" placeholder="DELETE FROM ..." />
-            <marker date="1445822260159" expanded="true" signature="4592:4677" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
@@ -579,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.153847">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding />
         </state>
@@ -587,8 +650,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27740493">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="55" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/BD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.846154">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <marker date="1445879590559" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445879590559" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
+            <marker date="1445879590559" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445879590559" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
+            <marker date="1445879590559" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.461538">
+          <caret line="25" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="88" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Sondage.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41051453">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding />
         </state>
       </provider>

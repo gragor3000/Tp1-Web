@@ -7,7 +7,7 @@
  * Création des tables                       *
  **************************************/
 
-function AddAccount($email, $password,$Admin)//ajoute un compte
+function AddAccount($email, $password, $Admin)//ajoute un compte
 {
     try {
         $pdo = new PDO('sqlite:bd.sqlite3');
@@ -24,17 +24,17 @@ function AddAccount($email, $password,$Admin)//ajoute un compte
     $requete = $pdo->prepare($insert);
     $requete->bindValue(':CompteEmail', $email);
     $requete->bindValue(':ComptePassword', md5($password));
-    if($Admin == "on")
-        $requete->bindValue(':Admin',1);
+    if ($Admin == "on")
+        $requete->bindValue(':Admin', 1);
     else
-        $requete->bindValue(':Admin',0);
+        $requete->bindValue(':Admin', 0);
 
     // Execute la requête
     $requete->execute();
 
 
     Admin();
-    echo "<script> alert('Le compte : (". $email.") a ete ajouter')</script>";
+    echo "<script> alert('Le compte : (" . $email . ") a ete ajouter')</script>";
     $pdo = null;
 }
 
@@ -48,7 +48,7 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
     $Select = "SELECT * FROM Compte WHERE Compte.CompteEmail = :Email AND Compte.ComptePassword = :Password";
     $req = $pdo->prepare($Select);
     $req->bindValue(':Email', $Email);
-    $req->bindValue(':Password', ($Password));
+    $req->bindValue(':Password', md5($Password));
     $req->execute();
     $value = $req->fetchAll(PDO::FETCH_NUM);
     if ($value == null) {//regarde si le compte est admin ou non et charge la page en conséquence
@@ -57,11 +57,10 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
         echo $doc->saveHTML();
         echo "<script type='text/javascript'>alert('email ou mot de passe invalid');</script>";
         $pdo = null;
-    }
-    else if ($value[0][2] == 1)
+    } else if ($value[0][2] == 1)
         Admin();
     else if ($value[0][2] == 0)
-        header("Location : ClientMain.htm");
+        Sondeur();
 
 }
 
@@ -101,9 +100,9 @@ function ShowAccount($doc, $email, $ii)//load tous les comptes dans la liste
     $lst = $doc->getElementById('ListeCompte');
     $ele = $doc->createElement("option");
     $ele->setAttribute("id", $ii);
-    $ele->setAttribute("value",$email);
-    if($ii == 0)
-        $ele->setAttribute("selected","selected");
+    $ele->setAttribute("value", $email);
+    if ($ii == 0)
+        $ele->setAttribute("selected", "selected");
     $ele->appendChild($doc->createTextNode($email));
     $lst->appendChild($ele);
 }
@@ -113,25 +112,25 @@ function AccountInfo()//affiche les info du compte sélectionner
 
 }
 
-function ModifyAccount($oldEmail,$Email,$Password,$Admin)//modifie le compte sélectionné
+function ModifyAccount($oldEmail, $Email, $Password, $Admin)//modifie le compte sélectionné
 {
     try {
         $pdo = new PDO('sqlite:bd.sqlite3');
     } catch (PDOException $e) {
         echo 'Connection failed: ' . $e->getMessage();
     }
-    $Update= "Update Compte SET CompteEmail = :Email, ComptePassword = :Password, CompteAdmin = :Admin WHERE CompteEmail = :oldEmail";
+    $Update = "Update Compte SET CompteEmail = :Email, ComptePassword = :Password, CompteAdmin = :Admin WHERE CompteEmail = :oldEmail";
     $req = $pdo->prepare($Update);
     $req->bindValue(':Email', $Email);
     $req->bindValue(':Password', md5($Password));
-    if($Admin == "on")
-        $req->bindValue(':Admin',1);
+    if ($Admin == "on")
+        $req->bindValue(':Admin', 1);
     else
-        $req->bindValue(':Admin',0);
-    $req->bindValue(':oldEmail',$oldEmail);
+        $req->bindValue(':Admin', 0);
+    $req->bindValue(':oldEmail', $oldEmail);
     $req->execute();
     Admin();
-    echo "<script> alert('Le compte :". $oldEmail ." a ete modifier')</script>";
+    echo "<script> alert('Le compte :" . $oldEmail . " a ete modifier')</script>";
     $pdo = null;
 }
 
@@ -142,13 +141,26 @@ function DeleteAccount($Email)//delete le compte sélectionné
     } catch (PDOException $e) {
         echo 'Connection failed: ' . $e->getMessage();
     }
-    $Delete= "DELETE FROM Compte WHERE CompteEmail = :Email";
+    $Delete = "DELETE FROM Compte WHERE CompteEmail = :Email";
     $req = $pdo->prepare($Delete);
     $req->bindValue(':Email', $Email);
     $req->execute();
     Admin();
-    echo "<script> alert('Le compte : (". $Email.") a ete supprimer')</script>";
+    echo "<script> alert('Le compte : (" . $Email . ") a ete supprimer')</script>";
     $pdo = null;
+}
+
+function Sondeur()
+{
+    try {
+        $doc = new DOMDocument();
+        $doc->loadHTMLFile("../HTML/ClientMain.htm");
+
+
+        echo $doc->saveHTML();
+    } catch (PDOException $ex) {
+        echo "Connection failed: " . $ex->getMessage();
+    }
 }
 
 ?>
