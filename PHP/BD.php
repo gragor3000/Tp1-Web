@@ -27,13 +27,16 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
         echo $doc->saveHTML();
         echo "<script type='text/javascript'>alert('email ou mot de passe invalid');</script>";
         $pdo = null;
+        $_SESSION['User'] = $Email;
+        print_r($_SESSION['User']);
+        setcookie("email", $Email, time() + (86400 * 30), "/");
+        setcookie("password", $Password, time() + (86400 * 30), "/");
     } else if ($value[0][2] == 1)
         Admin();
     else if ($value[0][2] == 0)
         Sondeur($Email);
 
-    setcookie("email", $Email, time() + (86400 * 30), "/");
-    setcookie("password", $Password, time() + (86400 * 30), "/");
+
 
 
 }
@@ -171,7 +174,7 @@ function Sondeur($email)//load la page d'un compte d'un sondeur
     }
 }
 
-function CreationSondage($post)//créer le nouveau sondage
+function CreationSondage($Post)//créer le nouveau sondage
 {
     try {
         $pdo = new PDO('sqlite:bd.sqlite3');
@@ -196,7 +199,13 @@ function CreationSondage($post)//créer le nouveau sondage
     $h1->appendChild($doc->createTextNode("Mot de passe : ".$mdp));
     $Questions->appendChild($h1);
     echo $doc->saveHTML();
-    AddQuestions($post);
+
+    for($ii = 1;$ii<= count($Post)-(count($Post)/2);$ii++)
+    {
+        $Question = $_POST['Question'.$ii];
+        $Type = $_POST['Type'.$ii];
+        AddQuestions($Question,$Type);
+    }
 }
 
 
@@ -206,7 +215,7 @@ function CreationCorpsSondage($nbQuestion)//créer le corps
     $doc = new DOMDocument();
     $doc->loadHTMLFile("../HTML/Question.htm");
     for ($ii = 1; $ii <= $nbQuestion; $ii++) {
-        AjoutQuestion($doc, $ii);
+        AjoutCorpsQuestion($doc, $ii);
     }
     //bouton de confirmation
     $button = $doc->createElement("button");
@@ -223,7 +232,7 @@ function CreationCorpsSondage($nbQuestion)//créer le corps
     echo $doc->saveHTML();
 }
 
-function AjoutQuestion($doc, $ii)//ajoute le corps de question prête a être créer
+function AjoutCorpsQuestion($doc, $ii)//ajoute le corps de question prête a être créer
 {
     //div contenant toute les questions
     $Questions = $doc->getElementById('Questions');
@@ -282,8 +291,31 @@ function AjoutQuestion($doc, $ii)//ajoute le corps de question prête a être crée
     $Questions->appendChild($div);
 }
 
-function AddQuestions($post)//ajoute les questions au sondage
+function AddQuestions($Question,$Type)//ajoute les questions au sondage
 {
+    try {
+        $pdo = new PDO('sqlite:bd.sqlite3');
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
 
+    $str = "SELECT SondageID FROM Sondage ORDER BY SondageID DESC";
+    $Select = $pdo->prepare($str);
+    $Select->execute();
+
+    $value = $Select->fetchAll();
+
+    $insert = "INSERT INTO Question(QuestionQuestion,QuestionReponse,QuestionType,QuestionSondageID) VALUES(:QuestionQuestion,:QuestionReponse,:QuestionType,:QuestionSondageID)";
+    $requete = $pdo->prepare($insert);
+    $requete->bindValue(':QuestionQuestion',$Question);
+    $requete->bindValue(':QuestionReponse','' );
+    $requete->bindValue(':QuestionType',$Type);
+    $requete->bindValue(':QuestionSondageID',$value[0][0]);
+
+
+    // Execute la requête
+    $requete->execute();
+
+    $pdo = null;
 }
 ?>

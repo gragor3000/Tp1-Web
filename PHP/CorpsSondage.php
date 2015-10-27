@@ -6,4 +6,5 @@
  * Time: 13:43
  */
 include("BD.php");
-    CreationCorpsSondage($_POST['Qte']);
+
+CreationCorpsSondage($_POST['Qte']);
