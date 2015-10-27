@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071cfd18-520c-45c7-9a0e-1b1cdc23de24" name="Default" comment="bitch please">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Sondage.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\Tp1-Web\HTML\Sondage.htm" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/bd.sqlite3" afterPath="$PROJECT_DIR$/PHP/bd.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Account.php" afterPath="$PROJECT_DIR$/PHP/Account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/Accueil.htm" afterPath="$PROJECT_DIR$/HTML/Accueil.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/AdminMain.htm" afterPath="$PROJECT_DIR$/HTML/AdminMain.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/BD.php" afterPath="$PROJECT_DIR$/PHP/BD.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/ClientMain.htm" afterPath="$PROJECT_DIR$/HTML/ClientMain.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/Sondage.htm" afterPath="$PROJECT_DIR$/HTML/Sondage.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Login.php" afterPath="$PROJECT_DIR$/PHP/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/Question.htm" afterPath="$PROJECT_DIR$/HTML/Question.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Sondage.php" afterPath="$PROJECT_DIR$/PHP/Sondage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/TP1.css" afterPath="$PROJECT_DIR$/CSS/TP1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/sondage.js" afterPath="$PROJECT_DIR$/JS/sondage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TP1.iws" />
@@ -30,31 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Accueil.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminMain.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8846154">
-              <caret line="55" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClientMain.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5">
-              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            <state vertical-scroll-proportion="-20.346153">
+              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -62,23 +49,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sondage.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/Sondage.htm">
+      <file leaf-file-name="Account.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.346154">
-              <caret line="54" column="42" selection-start-line="53" selection-start-column="56" selection-end-line="54" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sondage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
+      <file leaf-file-name="Accueil.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state vertical-scroll-proportion="2.6153846">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML/Question.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6767338">
+              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -87,35 +82,50 @@
       <file leaf-file-name="BD.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/BD.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.115385">
-              <caret line="168" column="41" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+            <state vertical-scroll-proportion="-69.03846">
+              <caret line="284" column="61" selection-start-line="284" selection-start-column="61" selection-end-line="284" selection-end-column="61" />
               <folding>
-                <marker date="1445883480211" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
-                <marker date="1445883480211" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
-                <marker date="1445883480211" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
-                <marker date="1445883480211" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
-                <marker date="1445883480211" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
-                <marker date="1445883480211" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+                <marker date="1445904566063" expanded="true" signature="479:571" placeholder="SELECT * FRO..Compte..." />
+                <marker date="1445904566063" expanded="true" signature="1588:1618" placeholder="SELECT Compt..Compte..." />
+                <marker date="1445904566063" expanded="true" signature="2804:2965" placeholder="CREATE TABLE..IF..." />
+                <marker date="1445904566063" expanded="true" signature="2985:3092" placeholder="INSERT INTO ..." />
+                <marker date="1445904566063" expanded="true" signature="3786:3904" placeholder="Update Compt..." />
+                <marker date="1445904566063" expanded="true" signature="4548:4593" placeholder="DELETE FROM ..." />
+                <marker date="1445904566063" expanded="true" signature="5589:5601" placeholder="INSERT INTO ..." />
+                <marker date="1445904566063" expanded="true" signature="5589:5608" placeholder="INSERT INTO ..." />
+                <marker date="1445904566063" expanded="true" signature="5589:5634" placeholder="INSERT INTO ..." />
+                <marker date="1445904566063" expanded="true" signature="5589:5669" placeholder="INSERT INTO ..." />
+                <marker date="1445904566063" expanded="true" signature="5589:5709" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.htm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML/Question.htm">
+      <file leaf-file-name="Sondage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Account.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/Account.php">
+      <file leaf-file-name="CrtSondage.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/CrtSondage.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+            <state vertical-scroll-proportion="4.8461537">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CorpsSondage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/CorpsSondage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,17 +157,23 @@
         <option value="$PROJECT_DIR$/Tp1-Web/PHP/Login.php" />
         <option value="$PROJECT_DIR$/Tp1-Web/PHP/BD.php" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/HTML/Accueil.htm" />
-        <option value="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/CSS/TP1.css" />
-        <option value="$PROJECT_DIR$/HTML/AdminMain.htm" />
-        <option value="$PROJECT_DIR$/HTML/Sondage.html" />
-        <option value="$PROJECT_DIR$/HTML/ClientMain.htm" />
-        <option value="$PROJECT_DIR$/PHP/Sondage.php" />
-        <option value="$PROJECT_DIR$/HTML/Sondage.htm" />
-        <option value="$PROJECT_DIR$/PHP/Account.php" />
-        <option value="$PROJECT_DIR$/PHP/BD.php" />
         <option value="$PROJECT_DIR$/HTML/Question.html" />
+        <option value="$PROJECT_DIR$/HTML/AdminMain.htm" />
+        <option value="$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/PHP/Account.php" />
+        <option value="$PROJECT_DIR$/HTML/CrtSondage.htm" />
+        <option value="$PROJECT_DIR$/HTML/Sondage.html" />
+        <option value="$PROJECT_DIR$/HTML/Sondage.htm" />
+        <option value="$PROJECT_DIR$/CSS/TP1.css" />
+        <option value="$PROJECT_DIR$/HTML/ClientMain.htm" />
+        <option value="$PROJECT_DIR$/PHP/Login.php" />
+        <option value="$PROJECT_DIR$/PHP/Cookie.php" />
+        <option value="$PROJECT_DIR$/HTML/Accueil.htm" />
+        <option value="$PROJECT_DIR$/JS/sondage.js" />
+        <option value="$PROJECT_DIR$/PHP/BD.php" />
+        <option value="$PROJECT_DIR$/PHP/Sondage.php" />
+        <option value="$PROJECT_DIR$/PHP/Question.php" />
+        <option value="$PROJECT_DIR$/HTML/Question.htm" />
       </list>
     </option>
   </component>
@@ -243,6 +259,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tp1-Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="HTML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -258,6 +288,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tp1-Web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3.3.5-dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,16 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Sondage.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -487,12 +525,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
           <folding>
-            <marker date="1445883480211" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445883480211" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
-            <marker date="1445883480211" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
-            <marker date="1445883480211" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="479:571" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="1588:1618" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="2804:2965" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445904566063" expanded="true" signature="2985:3092" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="3786:3904" placeholder="Update Compt..." />
+            <marker date="1445904566063" expanded="true" signature="4548:4593" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5601" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5608" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5634" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5669" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5709" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -550,12 +593,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="133" column="40" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
           <folding>
-            <marker date="1445883480211" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445883480211" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
-            <marker date="1445883480211" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
-            <marker date="1445883480211" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="479:571" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="1588:1618" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="2804:2965" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445904566063" expanded="true" signature="2985:3092" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="3786:3904" placeholder="Update Compt..." />
+            <marker date="1445904566063" expanded="true" signature="4548:4593" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5601" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5608" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5634" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5669" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5709" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -623,12 +671,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1445883480211" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445883480211" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
-            <marker date="1445883480211" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
-            <marker date="1445883480211" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="479:571" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="1588:1618" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="2804:2965" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445904566063" expanded="true" signature="2985:3092" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="3786:3904" placeholder="Update Compt..." />
+            <marker date="1445904566063" expanded="true" signature="4548:4593" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5601" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5608" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5634" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5669" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5709" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -688,10 +741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/TP1.css">
+    <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state vertical-scroll-proportion="-27.461538">
+          <caret line="83" column="74" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -699,90 +752,111 @@
     <entry file="file://$PROJECT_DIR$/bootstrap-3.3.5-dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6139" column="17" selection-start-line="6139" selection-start-column="17" selection-end-line="6139" selection-end-column="17" />
+          <caret line="6153" column="21" selection-start-line="6149" selection-start-column="4" selection-end-line="6153" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/TP1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/sondage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055434782">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6153846">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Sondage.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.346154">
-          <caret line="54" column="42" selection-start-line="53" selection-start-column="56" selection-end-line="54" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/ClientMain.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state vertical-scroll-proportion="-20.346153">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#button#0;n#td#0;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/AdminMain.htm">
+    <entry file="file://$PROJECT_DIR$/HTML/CrtSondage.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8846154">
-          <caret line="55" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
+        <state vertical-scroll-proportion="4.8461537">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Accueil.htm">
+    <entry file="file://$PROJECT_DIR$/PHP/CorpsSondage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/BD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.115385">
-          <caret line="168" column="41" selection-start-line="168" selection-start-column="41" selection-end-line="168" selection-end-column="41" />
+        <state vertical-scroll-proportion="-69.03846">
+          <caret line="284" column="61" selection-start-line="284" selection-start-column="61" selection-end-line="284" selection-end-column="61" />
           <folding>
-            <marker date="1445883480211" expanded="true" signature="423:584" placeholder="CREATE TABLE..IF..." />
-            <marker date="1445883480211" expanded="true" signature="604:711" placeholder="INSERT INTO ..." />
-            <marker date="1445883480211" expanded="true" signature="1435:1527" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="2410:2440" placeholder="SELECT Compt..Compte..." />
-            <marker date="1445883480211" expanded="true" signature="3651:3769" placeholder="Update Compt..." />
-            <marker date="1445883480211" expanded="true" signature="4413:4458" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="479:571" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="1588:1618" placeholder="SELECT Compt..Compte..." />
+            <marker date="1445904566063" expanded="true" signature="2804:2965" placeholder="CREATE TABLE..IF..." />
+            <marker date="1445904566063" expanded="true" signature="2985:3092" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="3786:3904" placeholder="Update Compt..." />
+            <marker date="1445904566063" expanded="true" signature="4548:4593" placeholder="DELETE FROM ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5601" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5608" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5634" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5669" placeholder="INSERT INTO ..." />
+            <marker date="1445904566063" expanded="true" signature="5589:5709" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Question.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6767338">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
           <folding />
         </state>
       </provider>

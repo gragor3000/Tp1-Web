@@ -7,5 +7,5 @@
  */
 
 include("BD.php");
-    Login($_POST['email'],$_POST['password'])
+Login($_POST['email'], $_POST['password']);
 ?>
