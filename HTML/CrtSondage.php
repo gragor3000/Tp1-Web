@@ -35,15 +35,15 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="../HTML/ClientMain.htm">Home</a></li>
-                <li class="active"><a href="../HTML/CrtSondage.htm">Création de sondage</a></li>
+                <li><a href="../HTML/ClientMain.php">Home</a></li>
+                <li class="active"><a href="../HTML/CrtSondage.php">Création de sondage</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Compte <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Paramètre</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="../HTML/Accueil.htm">Déconnexion</a></li>
+                        <li><a href="../HTML/Accueil.php">Déconnexion</a></li>
                     </ul>
                 </li>
             </ul>
