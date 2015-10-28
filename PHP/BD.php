@@ -335,12 +335,27 @@ function AfficherSondage($mdp)//affiche le sondage lié au mot de passe donnée
     $Select2->execute();
 
     $Question = $Select2->fetchAll(PDO::FETCH_NUM);
+
     $doc = new DOMDocument();
     $doc->loadHTMLFile("../HTML/Question.php");
+
+
 
     for ($ii = 0; $ii < count($Question); $ii++) {
         AddQuestion($doc, $Question[$ii][0], $Question[$ii][1], $ii + 1);
     }
+
+    $button = $doc->createElement("button");
+    $button->setAttribute("type", "submit");
+    $button->setAttribute("class", "btn btn-lg btn-default");
+    $button->appendChild($doc->createTextNode("Confirmer "));
+    $glyphSpan = $doc->createElement("span");
+    $glyphSpan->setAttribute("class", "glyphicon glyphicon-ok-circle");
+    $glyphSpan->setAttribute("aria-hidden", "true");
+    $button->appendChild($glyphSpan);
+
+    $Questions = $doc->getElementById('Questions');
+    $Questions->appendChild($button);
     echo $doc->saveHTML();
 
 }
@@ -361,32 +376,6 @@ function AddQuestion($doc, $Question, $Type, $ii)//ajoute les questions dans le 
     $label = $doc->createElement("label");
     $label->setAttribute("style", "color : white");
     $label->appendChild($doc->createTextNode("Question " . $ii . ":" . $Question));
-
-    /* //label du type de question a développement
-     $labelT1 = $doc->createElement("label");
-     $labelT1->setAttribute("style", "color : white");
-     $labelT1->appendChild($doc->createTextNode(" Developpement: "));
-
-     //label du type de question d'appréciation
-     $labelT2 = $doc->createElement("label");
-     $labelT2->setAttribute("style", "color : white");
-     $labelT2->appendChild($doc->createTextNode(" Appreciation: "));
-
-     //radio button de développement
-     $Type1 = $doc->createElement("input");
-     $Type1->setAttribute("type", "radio");
-     $Type1->setAttribute("name", "Type" . $ii);
-     $Type1->setAttribute("value", "0");
-     $Type1->setAttribute("checked", "checked");
-     $labelT1->appendChild($Type1);
-
-     //radio button d'appréciation
-     $Type2 = $doc->createElement("input");
-     $Type2->setAttribute("type", "radio");
-     $Type2->setAttribute("name", "Type" . $ii);
-     $Type2->setAttribute("value", "1");
-     $labelT2->appendChild($Type2);*/
-
 
     $br1 = $doc->createElement("br");
     $br2 = $doc->createElement("br");
@@ -418,8 +407,8 @@ function AddQuestion($doc, $Question, $Type, $ii)//ajoute les questions dans le 
         }
     }
     $div->appendChild($br2);
-    //$div->appendChild($labelT1);
     $hr = $doc->createElement("hr");
+    $hr->setAttribute("class","style5");
     $div->appendchild($hr);
     $Questions->appendChild($div);
 }
