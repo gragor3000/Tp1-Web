@@ -46,23 +46,6 @@
 
     </div>
 </div>
-<!--<div class="SignUp">
-    <div class="container">
-        <div class="jumbotron">
-            <form>
-                <h1>Inscrit Toi !</h1>
-
-                <p class="lead">Si vous n'avez pas de compte existant veuillez créer votre compte ici !</p>
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <input type="password" placeholder="Mot de Passe" class="form-control">
-                <br>
-
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            </form>
-        </div>
-    </div>
-</div>-->
 
 
 <div class="footer">

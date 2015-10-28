@@ -1,5 +1,10 @@
 <?php
-    session_start();
+session_start();
+
+if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
+    header("location: ../HTML/Accueil.php");
+
+
 ?>
 
 <html>
@@ -44,7 +49,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Paramètre</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="../HTML/Accueil.php">Déconnexion</a></li>
+                        <li><a href="../PHP/EndSession.php">Déconnexion</a></li>
                     </ul>
                 </li>
             </ul>
@@ -55,7 +60,7 @@
 
 <div class="container2">
     <div class="jumbotron3">
-        <form method="post" action="../PHP/Sondage.php">
+        <form id="Form1" method="post" action="../PHP/Sondage.php">
             <div id="Questions"></div>
 
         </form>

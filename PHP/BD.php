@@ -27,6 +27,8 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
         echo $doc->saveHTML();
         echo "<script type='text/javascript'>alert('email ou mot de passe invalid');</script>";
         $pdo = null;
+
+        $_SESSION['User'] = $_POST['email'];
         setcookie("email", $Email, time() + (86400 * 30), "/");
         setcookie("password", $Password, time() + (86400 * 30), "/");
 
@@ -330,12 +332,13 @@ function AfficherSondage($mdp)//affiche le sondage lié au mot de passe donnée
 
     $Sondage = $Select->fetchAll(PDO::FETCH_NUM);
 
-    $Select2 = $pdo->prepare("SELECT QuestionQuestion, QuestionType FROM Question WHERE QuestionSondageID = :SondageID ");
+    $Select2 = $pdo->prepare("SELECT QuestionQuestion, QuestionType,QuestionID FROM Question WHERE QuestionSondageID = :SondageID ");
     $Select2->bindValue(':SondageID', $Sondage[0][0]);
     $Select2->execute();
 
     $Question = $Select2->fetchAll(PDO::FETCH_NUM);
 
+    $_SESSION['Question'] = $Question;
     $doc = new DOMDocument();
     $doc->loadHTMLFile("../HTML/Question.php");
 
@@ -356,6 +359,8 @@ function AfficherSondage($mdp)//affiche le sondage lié au mot de passe donnée
 
     $Questions = $doc->getElementById('Questions');
     $Questions->appendChild($button);
+    $Form = $doc->getElementById("Form1");
+    $Form->setAttribute("action","../PHP/Reponse.php");
     echo $doc->saveHTML();
 
 }
@@ -411,6 +416,33 @@ function AddQuestion($doc, $Question, $Type, $ii)//ajoute les questions dans le 
     $hr->setAttribute("class","style5");
     $div->appendchild($hr);
     $Questions->appendChild($div);
+}
+
+function AddReponse($Question,$Reponse)//ajoute les réponses au questions
+{
+    try {
+        $pdo = new PDO('sqlite:bd.sqlite3');
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+    $insert = "INSERT INTO Reponse(ReponseReponse,ReponseQuestionID) VALUES(:ReponseReponse,:ReponseQuestionID)";
+    $requete = $pdo->prepare($insert);
+
+    for($ii=0;$ii<count($Question);$ii++)
+    {
+        $requete->bindValue(':ReponseReponse',$Reponse['Reponse'.($ii+1)] );
+        $requete->bindValue(':ReponseQuestionID', $Question[$ii][2]);
+
+        // Execute la requête
+        $requete->execute();
+
+    }
+    $doc = new DOMDocument();
+    $doc->loadHTMLFile("../HTML/ClientMain.php");
+    echo $doc->saveHTML();
+    echo "<script type='text/javascript'>alert('Sondage complete !');</script>";
+    $pdo = null;
+
 }
 
 ?>

@@ -6,5 +6,5 @@
  * Time: 15:33
  */
 include("BD.php");
-Login($_POST['email'], $_POST['password']);
-$_SESSION['User'] = $_POST['email'];
+//Login($_POST['email'], $_POST['password']);
+echo $_SERVER['SERVER_ADDR'];
