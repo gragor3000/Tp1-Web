@@ -6,6 +6,6 @@
  * Time: 15:33
  */
 include("BD.php");
-PhpExcel();
-//Login($_POST['email'], $_POST['password']);
+//PhpExcel();
+Login($_POST['email'], $_POST['password']);
 

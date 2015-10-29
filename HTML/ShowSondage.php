@@ -25,10 +25,11 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
 
 <body role="document">
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-topt">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -38,15 +39,15 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="../HTML/ClientMain.php">Home</a></li>
-                <li class="active"><a href="../HTML/CrtSondage.php">Création de sondage</a></li>
+                <li><a href="ClientMain.php">Home</a></li>
+                <li><a type="submit" href="CrtSondage.php">Cr�ation de sondage</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Compte <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a  type="submit" href="ShowSondage.php">Mes Sondages</a></li>
+                        <li><a  type="submit" href="ClientSondage.php">Mes Sondages</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a  href="../PHP/EndSession.php">Déconnexion</a></li>
+                        <li><a href="../PHP/EndSession.php">D�connexion</a></li>
                     </ul>
                 </li>
             </ul>
@@ -54,25 +55,33 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
     </div>
 </div>
 
-
-<div id="container" class="container">
+<div class="container">
     <div class="jumbotron2">
-        <form method="post" action="../PHP/CorpsSondage.php">
-            <h2>Quantité de Questions</h2>
+        <form method="post" action="../PHP/Account.php">
+            <h2>Liste des sondages</h2>
             <table class="Account">
                 <tr>
                     <td>
-                        <label for="Qte" class="sr-only">Quantité</label>
-                        <input name="Qte" id="Qte" type="number" min="1" placeholder="Quantité" class="form-control">
+                        <select name="Liste" class="Liste" size="5" id="ListeSondage"></select>
+                    </td>
+                    <td>
+                        <div class="textbox2">
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input name="email" id="inputEmail" type="email" placeholder="Email" class="form-control">
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input name="password" id="inputPassword" type="password" placeholder="Mot de Passe"
+                                   class="form-control">
+                            <label>Admin</label> <input name="admin" type="checkbox">
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <br>
-                        <button style="margin-left: 45%;" type="submit" class="btn btn-lg btn-success" name="Creer_btn"
-                                value="Accede">Créer
+                        <button type="submit" class="btn btn-lg btn-primary " name="Modify_btn" value="Modify">Modifier
                         </button>
                     </td>
+
                 </tr>
             </table>
 
@@ -81,7 +90,7 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
 </div>
 
 
-<div class="footer navbar-fixed-bottom">
+<div class="footer">
     <p class="text-muted"><a href="#">Haut de la page</a></p>
 </div>
 

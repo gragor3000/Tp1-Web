@@ -24,10 +24,10 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
         $doc = new DOMDocument();
         $doc->loadHTMLFile("../HTML/Accueil.php");
         echo $doc->saveHTML();
-        echo "<script type='text/javascript'>alert('email ou mot de passe invalid');</script>";
+        echo "<script type='text/javascript'>alert('email ou mot de passe invalide');</script>";
         $pdo = null;
 
-        $_SESSION['User'] = $_POST['email'];
+        $_SESSION['User'] = $Email;
         setcookie("email", $Email, time() + (86400 * 30), "/");
         setcookie("password", $Password, time() + (86400 * 30), "/");
 
@@ -82,10 +82,6 @@ function ShowAccount($doc, $email, $ii)//load tous les comptes dans la liste
     $lst->appendChild($ele);
 }
 
-function AccountInfo()//affiche les info du compte sélectionner
-{
-
-}
 
 function AddAccount($email, $password, $Admin)//ajoute un compte
 {
@@ -158,6 +154,7 @@ function DeleteAccount($Email)//delete le compte sélectionné
 
 function Sondeur($email)//load la page d'un compte d'un sondeur
 {
+
     try {
         $doc = new DOMDocument();
         $doc->loadHTMLFile("../HTML/ClientMain.php");
@@ -200,10 +197,44 @@ function CreationSondage($Post)//créer le nouveau sondage
     echo $doc->saveHTML();
 
     for ($ii = 1; $ii <= count($Post) - (count($Post) / 2); $ii++) {
-        $Question = $_POST['Question' . $ii];
-        $Type = $_POST['Type' . $ii];
+        $Question = $Post['Question' . $ii];
+        $Type = $Post['Type' . $ii];
         AddQuestionsBD($Question, $Type);
     }
+}
+
+function AddQuestionsBD($Question, $Type)//ajoute les questions au sondage dans la bd
+{
+    try {
+        $pdo = new PDO('sqlite:bd.sqlite3');
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+
+    $str = "SELECT SondageID FROM Sondage ORDER BY SondageID DESC";
+    $Select = $pdo->prepare($str);
+    $Select->execute();
+
+    $value = $Select->fetchAll();
+    $pdo = null;
+
+    try {
+        $pdo = new PDO('sqlite:bd.sqlite3');
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+
+    $insert = "INSERT INTO Question (QuestionQuestion, QuestionType, QuestionSondageID) VALUES (:QuestionQuestion, :QuestionType,:QuestionSondageID)";
+    $requete = $pdo->prepare($insert);
+    $requete->bindValue(':QuestionQuestion', $Question);
+    $requete->bindValue(':QuestionType', $Type);
+    $requete->bindValue(':QuestionSondageID', $value[0][0]);
+
+
+    // Execute la requête
+    $requete->execute();
+
+    $pdo = null;
 }
 
 
@@ -287,33 +318,6 @@ function AjoutCorpsQuestion($doc, $ii)//ajoute le corps de question prête a être
     $div->appendChild($labelT1);
     $div->appendChild($labelT2);
     $Questions->appendChild($div);
-}
-
-function AddQuestionsBD($Question, $Type)//ajoute les questions au sondage dans la bd
-{
-    try {
-        $pdo = new PDO('sqlite:bd.sqlite3');
-    } catch (PDOException $e) {
-        echo 'Connection failed: ' . $e->getMessage();
-    }
-
-    $str = "SELECT SondageID FROM Sondage ORDER BY SondageID DESC";
-    $Select = $pdo->prepare($str);
-    $Select->execute();
-
-    $value = $Select->fetchAll();
-
-    $insert = "INSERT INTO Question(QuestionQuestion,QuestionReponse,QuestionType,QuestionSondageID) VALUES(:QuestionQuestion,:QuestionType,:QuestionSondageID)";
-    $requete = $pdo->prepare($insert);
-    $requete->bindValue(':QuestionQuestion', $Question);
-    $requete->bindValue(':QuestionType', $Type);
-    $requete->bindValue(':QuestionSondageID', $value[0][0]);
-
-
-    // Execute la requête
-    $requete->execute();
-
-    $pdo = null;
 }
 
 function AfficherSondage($mdp)//affiche le sondage lié au mot de passe donnée
