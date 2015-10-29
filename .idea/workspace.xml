@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071cfd18-520c-45c7-9a0e-1b1cdc23de24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/ClientSondage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML/ShowSondage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/MyExcel.xlsx" afterPath="$PROJECT_DIR$/PHP/MyExcel.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/bd.sqlite3" afterPath="$PROJECT_DIR$/PHP/bd.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/BD.php" afterPath="$PROJECT_DIR$/PHP/BD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/ClientMain.php" afterPath="$PROJECT_DIR$/HTML/ClientMain.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/CrtSondage.php" afterPath="$PROJECT_DIR$/HTML/CrtSondage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Login.php" afterPath="$PROJECT_DIR$/PHP/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/Question.php" afterPath="$PROJECT_DIR$/HTML/Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/TP1.css" afterPath="$PROJECT_DIR$/CSS/TP1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/sondage.js" afterPath="$PROJECT_DIR$/JS/sondage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TP1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,26 +24,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BD.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BD.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHP/BD.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.807693">
-              <caret line="211" column="5" selection-start-line="207" selection-start-column="4" selection-end-line="211" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.3871345">
+              <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
               <folding>
-                <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-                <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-                <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-                <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-                <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-                <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-                <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-                <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-                <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-                <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-                <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-                <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-                <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-                <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+                <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+                <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+                <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+                <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+                <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+                <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+                <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+                <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+                <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+                <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+                <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+                <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+                <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+                <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
               </folding>
             </state>
           </provider>
@@ -75,7 +64,7 @@
       <file leaf-file-name="AdminMain.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/AdminMain.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1923075">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="7" />
               <folding />
             </state>
@@ -85,7 +74,7 @@
       <file leaf-file-name="ClientMain.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/ClientMain.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.576923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
               <folding />
             </state>
@@ -95,17 +84,17 @@
       <file leaf-file-name="ShowSondage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/ShowSondage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.653847">
+            <state vertical-scroll-proportion="0.0">
               <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientSondage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientSondage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/ClientSondage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -115,7 +104,7 @@
       <file leaf-file-name="CrtSondage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/CrtSondage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
               <folding />
             </state>
@@ -125,7 +114,7 @@
       <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/Question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.423077">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="90" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
               <folding />
             </state>
@@ -135,7 +124,7 @@
       <file leaf-file-name="Sondage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9615383">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
@@ -145,7 +134,7 @@
       <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6538463">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="false" />
@@ -201,7 +190,6 @@
         <option value="$PROJECT_DIR$/HTML/AdminMain.php" />
         <option value="$PROJECT_DIR$/HTML/Accueil.php" />
         <option value="$PROJECT_DIR$/PHP/Login.php" />
-        <option value="$PROJECT_DIR$/PHP/BD.php" />
         <option value="$PROJECT_DIR$/HTML/ClientMain.php" />
         <option value="$PROJECT_DIR$/HTML/CrtSondage.php" />
         <option value="$PROJECT_DIR$/HTML/Question.php" />
@@ -209,6 +197,7 @@
         <option value="$PROJECT_DIR$/JS/sondage.js" />
         <option value="$PROJECT_DIR$/PHP/ShowSondage.php" />
         <option value="$PROJECT_DIR$/HTML/ShowSondage.php" />
+        <option value="$PROJECT_DIR$/PHP/BD.php" />
       </list>
     </option>
   </component>
@@ -252,8 +241,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -559,20 +548,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -614,20 +603,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -686,20 +675,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="284" column="61" selection-start-line="284" selection-start-column="61" selection-end-line="284" selection-end-column="61" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -731,20 +720,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -785,20 +774,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="133" column="40" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -839,20 +828,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
           </folding>
         </state>
       </provider>
@@ -920,9 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <marker date="1446122900009" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,13 +916,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6538463">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="false" />
@@ -946,7 +931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Sondage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9615383">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
@@ -954,7 +939,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/CrtSondage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
           <folding />
         </state>
@@ -962,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/Question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.423077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="49" column="90" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
           <folding />
         </state>
@@ -972,38 +957,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7720264">
           <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/AdminMain.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1923075">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/BD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.807693">
-          <caret line="211" column="5" selection-start-line="207" selection-start-column="4" selection-end-line="211" selection-end-column="5" />
-          <folding>
-            <marker date="1446132162558" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
-            <marker date="1446132162558" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
-            <marker date="1446132162558" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
-            <marker date="1446132162558" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
-            <marker date="1446132162558" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="10606:10666" placeholder="SELECT Sonda..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="10855:10954" placeholder="SELECT Quest..Question..." />
-            <marker date="1446132162558" expanded="true" signature="14205:14301" placeholder="INSERT INTO ..." />
-            <marker date="1446132162558" expanded="true" signature="15560:15581" placeholder="SELECT * FRO..Sondage..." />
-            <marker date="1446132162558" expanded="true" signature="15779:15867" placeholder="SELECT Quest..Question..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,7 +980,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/ClientMain.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.576923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
           <folding />
         </state>
@@ -1027,7 +988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML/ShowSondage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.653847">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
           <folding />
         </state>
@@ -1038,6 +999,29 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/BD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3871345">
+          <caret line="397" column="41" selection-start-line="397" selection-start-column="41" selection-end-line="397" selection-end-column="41" />
+          <folding>
+            <marker date="1446149253261" expanded="true" signature="494:586" placeholder="SELECT * FRO..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="1649:1679" placeholder="SELECT Compt..Compte..." />
+            <marker date="1446149253261" expanded="true" signature="2796:2957" placeholder="CREATE TABLE..IF..." />
+            <marker date="1446149253261" expanded="true" signature="2977:3084" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="3778:3896" placeholder="Update Compt..." />
+            <marker date="1446149253261" expanded="true" signature="4540:4585" placeholder="DELETE FROM ..." />
+            <marker date="1446149253261" expanded="true" signature="5594:5674" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="6750:6803" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="7082:7215" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="10683:10743" placeholder="SELECT Sonda..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="10932:11031" placeholder="SELECT Quest..Question..." />
+            <marker date="1446149253261" expanded="true" signature="14367:14463" placeholder="INSERT INTO ..." />
+            <marker date="1446149253261" expanded="true" signature="15722:15743" placeholder="SELECT * FRO..Sondage..." />
+            <marker date="1446149253261" expanded="true" signature="15941:16029" placeholder="SELECT Quest..Question..." />
+          </folding>
         </state>
       </provider>
     </entry>

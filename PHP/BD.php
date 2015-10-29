@@ -276,6 +276,8 @@ function AjoutCorpsQuestion($doc, $ii)//ajoute le corps de question prête a être
     $Text = $doc->createElement("textArea");
     $Text->setAttribute("Name", "Question" . $ii);
     $Text->setAttribute("style", "width : 20%;height : 8%;");
+    $Text->setAttribute("cols", "80");
+    $Text->setAttribute("rows", "5");
 
     //titre de la question
     $label = $doc->createElement("label");
@@ -392,6 +394,8 @@ function AddQuestion($doc, $Question, $Type, $ii)//ajoute les questions dans le 
     if ($Type == 0) {
         //textbox de la réponse
         $Text = $doc->createElement("textArea");
+        $Text->setAttribute("cols", "80");
+        $Text->setAttribute("rows", "5");
         $Text->setAttribute("Name", "Reponse" . $ii);
         $Text->setAttribute("style", "width : 20%;height : 8%;");
         $Text->setAttribute("required", "");
