@@ -46,7 +46,7 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Compte <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a type="submit" href="ShowSondage.php">Mes Sondages</a></li>
+                        <li><a type="submit" href="../PHP/seeSondage.php">Mes Sondages</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="../PHP/EndSession.php">Déconnexion</a></li>
                     </ul>

@@ -27,7 +27,7 @@ function Login($Email, $Password)//load la page de la personne si les info rentr
         echo "<script type='text/javascript'>alert('email ou mot de passe invalide');</script>";
         $pdo = null;
 
-        $_SESSION['User'] = $Email;
+
         setcookie("email", $Email, time() + (86400 * 30), "/");
         setcookie("password", $Password, time() + (86400 * 30), "/");
 
@@ -156,6 +156,7 @@ function Sondeur($email)//load la page d'un compte d'un sondeur
 {
 
     try {
+        $_SESSION['User'] = $email;
         $doc = new DOMDocument();
         $doc->loadHTMLFile("../HTML/ClientMain.php");
         $h1 = $doc->createElement("h1");
@@ -177,11 +178,21 @@ function CreationSondage($Post)//créer le nouveau sondage
     } catch (PDOException $e) {
         echo 'Connection failed: ' . $e->getMessage();
     }
-    $insert = "INSERT INTO Sondage(SondageMdp,SondageCompte) VALUES(:SondageMdp,:SondageCompte)";
+    $date = date("Y/m/d");
+    $add_days = 3.5;
+    $date = date('Y-m-d', strtotime($date) + (24 * 3600 * $add_days)); //my preferred method
+//or
+    $date1 = date('Y-m-d', strtotime($date . ' +' . $add_days . ' days'));
+
+    $insert = "INSERT INTO Sondage(SondageMdp,SondageCompte,SondageActive,SondageDateDebut,SondageDateFin) VALUES(:SondageMdp,:SondageCompte,:SondageActive,:SondageDateDebut,:SondageDateFin)";
     $requete = $pdo->prepare($insert);
     $mdp = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
     $requete->bindValue(':SondageMdp', $mdp);
     $requete->bindValue(':SondageCompte', $_SESSION['User']);
+    $requete->bindValue(':SondageActive', 1);
+    $requete->bindValue(':SondageDateDebut', date("d/m/Y"));
+    $requete->bindValue(':SondageDateFin', $date1);
+
 
     // Execute la requête
     $requete->execute();
@@ -330,42 +341,52 @@ function AfficherSondage($mdp)//affiche le sondage lié au mot de passe donnée
         echo 'Connection failed: ' . $e->getMessage();
     }
 
-    $str = "SELECT SondageID FROM Sondage WHERE SondageMdp = :SondageMdp";
+    $str = "SELECT SondageID, SondageActive, SondageDateFin FROM Sondage WHERE SondageMdp = :SondageMdp";
     $Select = $pdo->prepare($str);
     $Select->bindValue(':SondageMdp', $mdp);
     $Select->execute();
 
     $Sondage = $Select->fetchAll(PDO::FETCH_NUM);
+    $date = date("d/m/Y");
 
-    $Select2 = $pdo->prepare("SELECT QuestionQuestion, QuestionType,QuestionID FROM Question WHERE QuestionSondageID = :SondageID ");
-    $Select2->bindValue(':SondageID', $Sondage[0][0]);
-    $Select2->execute();
+    if ($Sondage[0][1] == 1 && $Sondage[0][2]) {
 
-    $Question = $Select2->fetchAll(PDO::FETCH_NUM);
+        $Select2 = $pdo->prepare("SELECT QuestionQuestion, QuestionType,QuestionID FROM Question WHERE QuestionSondageID = :SondageID ");
+        $Select2->bindValue(':SondageID', $Sondage[0][0]);
+        $Select2->execute();
 
-    $_SESSION['Question'] = $Question;
-    $doc = new DOMDocument();
-    $doc->loadHTMLFile("../HTML/Question.php");
+        $Question = $Select2->fetchAll(PDO::FETCH_NUM);
+
+        $_SESSION['Question'] = $Question;
+        $doc = new DOMDocument();
+        $doc->loadHTMLFile("../HTML/Question.php");
 
 
-    for ($ii = 0; $ii < count($Question); $ii++) {
-        AddQuestion($doc, $Question[$ii][0], $Question[$ii][1], $ii + 1);
+        for ($ii = 0; $ii < count($Question); $ii++) {
+            AddQuestion($doc, $Question[$ii][0], $Question[$ii][1], $ii + 1);
+        }
+
+        $button = $doc->createElement("button");
+        $button->setAttribute("type", "submit");
+        $button->setAttribute("class", "btn btn-lg btn-default");
+        $button->appendChild($doc->createTextNode("Confirmer "));
+        $glyphSpan = $doc->createElement("span");
+        $glyphSpan->setAttribute("class", "glyphicon glyphicon-ok-circle");
+        $glyphSpan->setAttribute("aria-hidden", "true");
+        $button->appendChild($glyphSpan);
+
+        $Questions = $doc->getElementById('Questions');
+        $Questions->appendChild($button);
+        $Form = $doc->getElementById("Form1");
+        $Form->setAttribute("action", "../PHP/Reponse.php");
+        echo $doc->saveHTML();
+    } else {
+        echo "<script>alert('sondage inaccessible') </script>";
+        $doc = new DOMDocument();
+        $doc->loadHTMLFile("../HTML/ClientMain.php");
+        echo $doc->saveHTML();
     }
 
-    $button = $doc->createElement("button");
-    $button->setAttribute("type", "submit");
-    $button->setAttribute("class", "btn btn-lg btn-default");
-    $button->appendChild($doc->createTextNode("Confirmer "));
-    $glyphSpan = $doc->createElement("span");
-    $glyphSpan->setAttribute("class", "glyphicon glyphicon-ok-circle");
-    $glyphSpan->setAttribute("aria-hidden", "true");
-    $button->appendChild($glyphSpan);
-
-    $Questions = $doc->getElementById('Questions');
-    $Questions->appendChild($button);
-    $Form = $doc->getElementById("Form1");
-    $Form->setAttribute("action", "../PHP/Reponse.php");
-    echo $doc->saveHTML();
 
 }
 
@@ -449,7 +470,75 @@ function AddReponse($Question, $Reponse)//ajoute les réponses au questions
     $pdo = null;
 }
 
-function PhpExcel()
+
+function LoadSondage($doc, $data, $ii)//load les sondages dans la liste
+{
+    $lst = $doc->getElementById('ListeSondage');
+    $ele = $doc->createElement("option");
+    $ele->setAttribute("id", $ii);
+    $ele->setAttribute("value", $data);
+    if ($ii == 0)
+        $ele->setAttribute("selected", "selected");
+    $ele->appendChild($doc->createTextNode($data));
+    $lst->appendChild($ele);
+}
+
+function ShowSondages()//montre les sondages créer à l'utilisateur
+{
+
+    try {
+        $pdo = new PDO('sqlite:bd.sqlite3');
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+
+    try {
+        $req = $pdo->prepare("SELECT SondageMdp FROM Sondage");
+        $req->execute();
+
+        $value = $req->fetchAll();
+
+        $doc = new DOMDocument();
+        $doc->loadHTMLFile("../HTML/ShowSondage.php");
+
+
+        $ii = 0;
+        foreach ($value as $data) {//remplit ma liste de tous les comptes
+            LoadSondage($doc, $data['SondageMdp'], $ii);
+            $ii++;
+        }
+        echo $doc->saveHTML();
+        $pdo = null;
+    } catch (PDOException $ex) {
+        echo "Connection failed: " . $ex->getMessage();
+    }
+}
+
+function ModifSondage($Mdp, $Debut, $Fin, $Active)//modifie le sondage
+{
+    if ($Debut < $Fin) {
+        try {
+            $pdo = new PDO('sqlite:bd.sqlite3');
+        } catch (PDOException $e) {
+            echo 'Connection failed: ' . $e->getMessage();
+        }
+
+
+        $Update = "Update Sondage SET SondageActive = :SondageActive, SondageDateDebut = :SondageDateDebut, SondageDateFin = :SondageDateFin WHERE SondageMdp = :SondageMdp";
+        $req = $pdo->prepare($Update);
+        $req->bindValue(':SondageActive', $Active);
+        $req->bindValue(':SondageDateDebut', $Debut);
+        $req->bindValue(':SondageDateFin', $Fin);
+        $req->bindValue(':SondageMdp', $Mdp);
+        $req->execute();
+    } else
+        echo "<script> alert('date de debut apres la date de fin') </script>";
+
+    ShowSondages();
+
+}
+
+function PhpExcel()//créer le fichier excel
 {
     require_once "../Classes/PHPExcel.php";
     $objPHPExcel = new PHPExcel();
@@ -469,31 +558,41 @@ function PhpExcel()
         echo 'Connection failed: ' . $e->getMessage();
     }
 
-    $str = "SELECT * FROM Sondage";
-    $Select = $pdo->prepare($str);
-    $Select->execute();
+    $Select1 = $pdo->prepare("SELECT QuestionQuestion,QuestionID FROM Question");
+    $Select1->execute();
 
-    $Sondage = $Select->fetchAll(PDO::FETCH_NUM);
+    $Question = $Select1->fetchAll(PDO::FETCH_NUM);
 
-    for ($ii = 0; $ii < count($Sondage); $ii++) {
-        $Select2 = $pdo->prepare("SELECT QuestionQuestion, QuestionType FROM Question WHERE QuestionSondageID = :SondageID ");
-        $Select2->bindValue(':SondageID', $Sondage[$ii][0]);
-        $Select2->execute();
 
-        $Question = $Select2->fetchAll(PDO::FETCH_NUM);
 
-        for ($i = 0; $i < count($Question); $i++) {
-            $objPHPExcel->setActiveSheetIndex(0)
-                ->setCellValue('A' . ($ii+$i), $Question[$i][0])
-                ->setCellValue('B' . $ii, $Question[$i][1]);
-        }
+    for ($i = 0; $i < count($Question); $i++) {
+        $objPHPExcel->setActiveSheetIndex(0)
+            ->setCellValue('A' . ($i + 1), implode($Question[$i]));
     }
+
+        $Select2 = $pdo->prepare("SELECT ReponseReponse FROM Reponse");
+        $Select2->execute();
+        $Reponse = $Select2->fetchAll((PDO::FETCH_NUM));
+
+        for($ii=0;$ii<count($Reponse);$ii++)
+        {
+            $objPHPExcel->setActiveSheetIndex(0)
+
+            ->setCellValue('E'.($ii+1),implode($Reponse[$ii]));
+        }
+
+
+
+
+
+
 
     require_once '../Classes/PHPExcel/IOFactory.php';
     $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 // If you want to output e.g. a PDF file, simply do:
     //$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'PDF');
     $objWriter->save('MyExcel.xlsx');
+    header("location: ../HTML/ClientMain.php");
 }
 
 ?>

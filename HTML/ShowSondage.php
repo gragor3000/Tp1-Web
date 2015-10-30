@@ -20,7 +20,6 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
     <link rel="icon" href="../../favicon.ico">
 
     <!-- Bootstrap core CSS -->
-
 </head>
 
 <body role="document">
@@ -39,15 +38,15 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="ClientMain.php">Home</a></li>
-                <li><a type="submit" href="CrtSondage.php">Création de sondage</a></li>
+                <li><a href="../HTML/ClientMain.php">Home</a></li>
+                <li><a type="submit" href="../HTML/CrtSondage.php">Creation de sondage</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Compte <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a  type="submit" href="ClientSondage.php">Mes Sondages</a></li>
+                        <li><a  type="submit" href="#">Mes Sondages</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="../PHP/EndSession.php">Déconnexion</a></li>
+                        <li><a href="../PHP/EndSession.php">Deconnexion</a></li>
                     </ul>
                 </li>
             </ul>
@@ -57,7 +56,7 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
 
 <div class="container">
     <div class="jumbotron2">
-        <form method="post" action="../PHP/Account.php">
+        <form method="post" action="../PHP/ModifSondage.php">
             <h2>Liste des sondages</h2>
             <table class="Account">
                 <tr>
@@ -66,12 +65,13 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
                     </td>
                     <td>
                         <div class="textbox2">
-                            <label for="inputEmail" class="sr-only">Email address</label>
-                            <input name="email" id="inputEmail" type="email" placeholder="Email" class="form-control">
-                            <label for="inputPassword" class="sr-only">Password</label>
-                            <input name="password" id="inputPassword" type="password" placeholder="Mot de Passe"
+                            <label for="inputDebut">Date de debut</label>
+                            <input name="DateDebut" id="inputDebut" type="date" placeholder="Date de debut" required class="form-control">
+                            <label for="inputFin">Date de fin</label>
+                            <input name="DateFin" id="inputFin" type="date" required placeholder="Date de fin"
                                    class="form-control">
-                            <label>Admin</label> <input name="admin" type="checkbox">
+                            <label>Active</label> <input required name="Activate" value="1" type="radio">
+                            <label>Desactive</label> <input required name="Activate" value="0" type="radio">
                         </div>
                     </td>
                 </tr>
@@ -79,6 +79,8 @@ if(!(isset($_SESSION['User']) && $_SESSION['User'] != ''))
                     <td>
                         <br>
                         <button type="submit" class="btn btn-lg btn-primary " name="Modify_btn" value="Modify">Modifier
+                        </button>
+                        <button type="submit" class="btn btn-lg btn-success " name="Submit_btn" value="submit">Excel
                         </button>
                     </td>
 
